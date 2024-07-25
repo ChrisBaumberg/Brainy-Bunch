@@ -1,3 +1,4 @@
+
 export default function Headline({size, text}){
     return(
         <>
@@ -9,6 +10,7 @@ export default function Headline({size, text}){
         }}>
             {text ? text : "NewBond"}
         </h1>
+        
         </>
     )
 }

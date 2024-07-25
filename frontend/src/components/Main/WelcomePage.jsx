@@ -1,24 +1,19 @@
-import styled from "styled-components";
+
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"
 
 export function WelcomePage(){
     return(
         <>
-        <StyledWelcomePage>
-   <div>
-    Willkommen bei Brainy Bunch <br />
+      
+
+    <h1>Willkommen bei Brainy Bunch</h1> <br />
     <Link to ="/login" style={{textDecoration: "none"}}>
-     
-     <input type="button" value="Login" name="loginButtonWP" className="loginButtonWP" />
+        <img src={logo} alt="" />
     </Link>
-    </div>
-    </StyledWelcomePage>
+  
+
     </>
     )
     
 }
-
-const StyledWelcomePage = styled.div`
-    font-size: 24px;
-    text-align: center;
-`
