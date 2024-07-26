@@ -11,16 +11,17 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
 //REACT imports
-import { Fragment } from "react";
+
 import { WelcomePage } from "./components/Main/WelcomePage";
 import { ErrorPage } from "./components/Main/ErrorPage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Login from "./components/pages/Login";
 import RegisterForm from "./components/Forms/RegisterForm";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <Container>
+   <Fragment>
   
       <img src="./public/assets/logo.png" alt="" className="logoBrand"/>
       <BrowserRouter>
@@ -33,11 +34,8 @@ function App() {
         
       </Routes>
       </BrowserRouter>
-
-      <Box>
-        
-      </Box>
-    </Container>
+    </Fragment>
+   
   );
 }
 export default App;

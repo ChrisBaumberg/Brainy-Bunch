@@ -1,10 +1,10 @@
-import styled from "styled-components";
+
 import { Link } from "react-router-dom";
 
-function RegisterForm(){
+export default function RegisterForm(){
     const loginTitle=" Melde "
     return(
-        <StyledRegisterForm>
+    
         <div className="registerForm">
             <label>Name: </label><br />
             <input type="text" /> <br />
@@ -24,13 +24,7 @@ function RegisterForm(){
                 dich hier an.
             </label>
         </div>
-        </StyledRegisterForm>
+
     )
 }
-export default RegisterForm;
 
-const StyledRegisterForm=styled.div`
-    text-align: center;
-    padding-bottom:10px;
-    margin-bottom: 10px;
-`

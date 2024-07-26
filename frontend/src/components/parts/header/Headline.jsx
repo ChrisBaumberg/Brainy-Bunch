@@ -4,7 +4,7 @@ export default function Headline({size, text}){
         <>
         <h1 style={{
             textAlign : "center",
-            color: "text.secondary",
+            color: "text.primary",
             fontFamily: "Arial",
             fontSize: size
         }}>

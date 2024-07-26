@@ -2,6 +2,7 @@
 
 import { Box } from "@mui/material";
 import Headline from "../parts/header/Headline";
+import LoginForm from "../parts/login/LoginForm";
 
 
 export default function Login(){
@@ -11,8 +12,9 @@ export default function Login(){
             width: "100vw",
             height: "100vh",
             display: 'grid',
+            margin: "0",
             gridTemplateRows: '15% 65% 20%',
-    
+            
             fontSize: "32px",
             backgroundColor: "red"
         }}>
@@ -34,18 +36,20 @@ export default function Login(){
                     width: "100%",
                     height: "100%",
                     display: "flex",
+                    gap: "0",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
                     backgroundColor: "yellow"
                     }}>
-
+                        <LoginForm/>
                 </Box>
                         {/* QuoteCard */}
                 <Box sx={{
                     width: "100%",
                     height: "100%",
                     display: "flex",
+                    gap: "0",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
@@ -58,7 +62,7 @@ export default function Login(){
             <Box sx={{
                 width: "100%",
                 height: "100%",
-                display: "grid",
+           
                 backgroundColor: "green"
                
             }}>
