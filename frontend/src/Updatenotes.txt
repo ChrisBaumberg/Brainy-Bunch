@@ -1,0 +1,5 @@
+Update vom 26.07.2024 (commit 26072020401):
+- Anpassung der Login-Page
+    - Grid-Layout
+    - Einfügen von labels und inputs für Username und Passwort
+    - Einfügen eines Submit-Buttons (als input, mit dem value "Bestätigen")

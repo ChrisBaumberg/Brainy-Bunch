@@ -36,11 +36,12 @@ export default function Login(){
                     width: "100%",
                     height: "100%",
                     display: "flex",
-                    gap: "0",
+                    gap: "5px",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
                     backgroundColor: "yellow"
+                    
                     }}>
                         <LoginForm/>
                 </Box>
@@ -49,7 +50,7 @@ export default function Login(){
                     width: "100%",
                     height: "100%",
                     display: "flex",
-                    gap: "0",
+                    
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
