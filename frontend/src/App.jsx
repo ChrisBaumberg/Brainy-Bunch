@@ -4,7 +4,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./App.css";
 
-import { styled } from "@mui/material";
+
 
 //MUI imports
 import Container from "@mui/material/Container";
@@ -15,7 +15,7 @@ import { Fragment } from "react";
 import { WelcomePage } from "./components/Main/WelcomePage";
 import { ErrorPage } from "./components/Main/ErrorPage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import LoginForm from "./components/Forms/LoginForm";
+import Login from "./components/pages/Login";
 import RegisterForm from "./components/Forms/RegisterForm";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/register" element={<RegisterForm/>}/>
         <Route path="/login" element={
-          <LoginForm/>}/>
+          <Login/>}/>
         <Route path="/" element={<WelcomePage/>}/>
         <Route path = "/:path" element={<ErrorPage/>}/>
         
