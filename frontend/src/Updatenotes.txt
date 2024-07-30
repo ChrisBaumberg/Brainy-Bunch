@@ -1,5 +1,13 @@
-Update vom 26.07.2024 (commit 26072020401):
+Update vom 26.07.2024 (commit 2607202401):
 - Anpassung der Login-Page
     - Grid-Layout
     - Einfügen von labels und inputs für Username und Passwort
     - Einfügen eines Submit-Buttons (als input, mit dem value "Bestätigen")
+
+Update vom 30.07.2024 (commit 3007202401):
+-   Login-Page:
+    - Einfügen eines Regstrieren-Buttons
+-   backend:
+    - Anbindung Datenbank
+    - Update der app.js
+    - Installation von dotenv, cors und uuid
