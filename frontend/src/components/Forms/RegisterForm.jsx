@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 export default function RegisterForm(){
-    const loginTitle=" Melde "
+   
     return(
     
         <div className="registerForm">
@@ -17,11 +17,12 @@ export default function RegisterForm(){
         
             <input type="button" value="Bestätigen" className="buttonSubmitRegister"/> <br /> <br />
         
-            <label>Du hast bereits einen Account? 
+            <label style={{fontSize: "12px"}}>Du hast bereits einen Account? 
+            
                 <Link to="/login">
-                 {loginTitle}
+                    Melde dich hier an.
                 </Link>
-                dich hier an.
+                
             </label>
         </div>
 

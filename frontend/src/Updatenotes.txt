@@ -11,3 +11,6 @@ Update vom 30.07.2024 (commit 3007202401):
     - Anbindung Datenbank
     - Update der app.js
     - Installation von dotenv, cors und uuid
+
+Update vom 01.08.2024 (commit 0108202401):
+-   Link zur RegisterForm

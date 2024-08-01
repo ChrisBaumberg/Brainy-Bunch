@@ -1,12 +1,9 @@
-import { Link } from "@mui/material"
-import { Fragment, useState } from "react"
+import { Link } from "react-router-dom";
+import { Fragment, useCallback, useState } from "react"
 
 
 export default function LoginForm(){
-    const regButton = <input type="button" value="Registrieren" style={{
-        width: "90px"
-    }}/>;
-        
+  
     
     return(
         <Fragment>
@@ -15,15 +12,18 @@ export default function LoginForm(){
         <input type="text" placeholder="username"/>
         <label/>Passwort: 
         <input type="password" />
-        <input type="button" value="Bestätigen" style={{
+        <input type="button" value="Einloggen" style={{
             width: "90px"
         }}/>
-        <Link to="/register">
-        {regButton}
+        <label style={{fontSize:"12px"}}>Noch keinen Account? 
+        <Link to = "/register">
+            Registriere dich hier
+        </Link>
+        </label>
   
         
        
-      </Link>
+
         </Fragment>
     )
 }
