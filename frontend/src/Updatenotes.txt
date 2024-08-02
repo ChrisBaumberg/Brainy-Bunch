@@ -14,3 +14,7 @@ Update vom 30.07.2024 (commit 3007202401):
 
 Update vom 01.08.2024 (commit 0108202401):
 -   Link zur RegisterForm
+
+Update vom 02.08.2024 (commit 0208202401):
+-   Styling der Registre-Seite
+-   Einbeziehung des Farbschemas (siehe Trello unter "To Keep" -> "Farbschema")

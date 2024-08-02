@@ -4,8 +4,8 @@ export default function Headline({size, text}){
         <>
         <h1 style={{
             textAlign : "center",
-            color: "text.primary",
-            fontFamily: "Arial",
+            color: "#F2E0C9",
+            fontFamily: "Georgia",
             fontSize: size
         }}>
             {text ? text : "NewBond"}

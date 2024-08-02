@@ -7,20 +7,22 @@ export default function LoginForm(){
     
     return(
         <Fragment>
-
-        <label/>Username: 
-        <input type="text" placeholder="username"/>
-        <label/>Passwort: 
-        <input type="password" />
+            <div style={{
+                color: "#F2E0C9"
+            }}>
+        <label/>Username: <br />
+        <input type="text" placeholder="username"/><br />
+        <label/>Passwort: <br />
+        <input type="password" /><br />
         <input type="button" value="Einloggen" style={{
             width: "90px"
-        }}/>
+        }}/> <br />
         <label style={{fontSize:"12px"}}>Noch keinen Account? 
         <Link to = "/register">
             Registriere dich hier
         </Link>
         </label>
-  
+        </div>
         
        
 
