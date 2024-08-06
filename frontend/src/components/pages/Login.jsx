@@ -2,7 +2,8 @@
 
 import { Box } from "@mui/material";
 import Headline from "../parts/header/Headline";
-import LoginForm from "../parts/login/LoginForm";
+import LoginForm from "../Forms/LoginForm";
+import Quote from "../parts/Quote";
 
 
 export default function Login(){
@@ -57,10 +58,12 @@ export default function Login(){
                     alignItems: "center",
                     backgroundColor: "#04BFBF"
                     }}>
+                        <Quote />
 				</Box>
 
                 
             </Box>
+            {/* Bottom Box  - to be used as footer? */}
             <Box sx={{
                 width: "100%",
                 height: "100%",

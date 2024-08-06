@@ -1,0 +1,17 @@
+Todos:
+-   Registrier-Funktionen
+-   Login-Funktionen
+-   Links zu AGB, Datenschutz zur Regstrierung
+-   Ständige Links zu Impressum, AGB, Datenschutz im Footer?
+-   Zitate-Sammlung für zufälliges Zitat im Quote-Bereich auf Login-Page
+-   Anbindung backend
+
+Probleme:
+-   Ränder
+-   Größe der Textarea auf Login-Page ist statisch, sollte dynamisch sein
+
+To discuss:
+-   Farbverteilung
+-   font-family
+-   font-size
+-   Regstrierung und Anmeldung mit Username oder E-Mail?

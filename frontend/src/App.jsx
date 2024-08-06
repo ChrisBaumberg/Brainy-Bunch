@@ -4,8 +4,6 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "./App.css";
 
-
-
 //MUI imports
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";

@@ -21,6 +21,7 @@ export function Register(){
             gridTemplateColumns: "100%",
             backgroundColor: "#04BFBF"
         }}>
+            {/*RegisterForm */}
             <Box sx={{
                 width: "100%",
                 height: "100%",
@@ -35,6 +36,8 @@ export function Register(){
             </Box>
           
         </Box>
+
+        {/* Bottom Box  - to be used as footer? */}
         <Box sx={{
                 width: "100%",
                 height: "100%",
