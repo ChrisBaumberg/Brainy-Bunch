@@ -11,3 +11,16 @@ Update vom 30.07.2024 (commit 3007202401):
     - Anbindung Datenbank
     - Update der app.js
     - Installation von dotenv, cors und uuid
+
+Update vom 01.08.2024 (commit 0108202401):
+-   Link zur RegisterForm
+
+Update vom 02.08.2024 (commit 0208202401):
+-   Styling der Registre-Seite
+-   Einbeziehung des Farbschemas (siehe Trello unter "To Keep" -> "Farbschema")
+
+Update vom 06.08.2024:
+-   Quote-Area mit Platzhalter-Text eingfügt
+-   Headline als Link zur Main-Page
+-   Login-Form in Forms-Ordner verschoben
+-   Quote-Komponente in parts-Ordner
