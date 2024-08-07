@@ -1,10 +1,10 @@
-Update vom 26.07.2024 (commit 2607202401):
+Update vom 26.07.2024:
 - Anpassung der Login-Page
     - Grid-Layout
     - Einfügen von labels und inputs für Username und Passwort
     - Einfügen eines Submit-Buttons (als input, mit dem value "Bestätigen")
 
-Update vom 30.07.2024 (commit 3007202401):
+Update vom 30.07.2024:
 -   Login-Page:
     - Einfügen eines Regstrieren-Buttons
 -   backend:
@@ -12,10 +12,10 @@ Update vom 30.07.2024 (commit 3007202401):
     - Update der app.js
     - Installation von dotenv, cors und uuid
 
-Update vom 01.08.2024 (commit 0108202401):
+Update vom 01.08.2024:
 -   Link zur RegisterForm
 
-Update vom 02.08.2024 (commit 0208202401):
+Update vom 02.08.2024:
 -   Styling der Registre-Seite
 -   Einbeziehung des Farbschemas (siehe Trello unter "To Keep" -> "Farbschema")
 
@@ -24,3 +24,7 @@ Update vom 06.08.2024:
 -   Headline als Link zur Main-Page
 -   Login-Form in Forms-Ordner verschoben
 -   Quote-Komponente in parts-Ordner
+
+Update vom 07.08.2024:
+-   Backend für Registrierung und Login eingefügt
+-   Quote ohne Textarea
