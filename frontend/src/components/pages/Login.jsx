@@ -56,7 +56,9 @@ export default function Login(){
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    backgroundColor: "#04BFBF"
+                    backgroundColor: "#04BFBF",
+                    paddingRight: "20px",
+                    paddingLeft: "20px"
                     }}>
                         <Quote />
 				</Box>

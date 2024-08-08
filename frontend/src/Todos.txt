@@ -15,3 +15,7 @@ To discuss:
 -   font-family
 -   font-size
 -   Regstrierung und Anmeldung mit Username oder E-Mail?
+
+Mögliche Zitate:
+-   "Es ist noch kein Meister vom Himmel gefallen"
+-   "Wer nicht fragt, bleibt dumm."
