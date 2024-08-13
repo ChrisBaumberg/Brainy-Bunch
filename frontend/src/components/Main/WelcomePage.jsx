@@ -14,7 +14,7 @@ export function WelcomePage(){
       {/*   Welcome Page/
             First Page */}
     <h1 style={{textAlign: "center"
-    }}>Willkommen bei <Headline weight={"32px"} text="Brainy Bunch"/> </h1> <br />
+    }}>Welcome at <Headline weight={"32px"} text="Brainy Bunch"/> </h1> <br />
     <Link to ="/login" style={{textDecoration: "none", display: "flex", justifyContent:"center"}}>
         <img src={logo} alt="" />
     </Link>

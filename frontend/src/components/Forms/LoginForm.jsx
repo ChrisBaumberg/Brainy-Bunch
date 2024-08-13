@@ -24,15 +24,15 @@ export default function LoginForm(){
                 <label/>Username: <br />
                 <input type="text" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} />
                 <br />
-                <label/>Passwort: <br />
+                <label/>Password: <br />
                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" /> <br />
-                <input type="submit" value="Einloggen" style={{
+                <input type="submit" value="Login" style={{
             width: "90px"
         }}/> <br />
         </form>
-                <label style={{fontSize:"12px"}}>Noch keinen Account? 
+                <label style={{fontSize:"12px"}}>No account yet?
                     <Link to = "/register">
-                        Registriere dich hier
+                        Registrier here
                     </Link>
                 {/* Link to Register-Page */}
                 </label>
