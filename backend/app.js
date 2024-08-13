@@ -34,7 +34,24 @@ const UserSchema = new mongoose.Schema({
   password: {type: String, required: true},
   email: {type: String, required: true}
 });
-const User = mongoose.model("socialusers",UserSchema)
+
+
+const User = mongoose.model("socialusers",UserSchema);
+
+const FeedSchema = new mongoose.Schema({
+  id: String,
+  title: String,
+  description: String,
+  image: String,
+  avatarLetter: String,
+  badgeContent: Number,
+  creationDate: Date,
+  price: String,
+  location: String,
+  contact: String
+});
+
+const Feed = mongoose.model("feed", FeedSchema);
 app.get("/user", async(req,res)=>{
   try{
     const user= await User.find({});
@@ -44,7 +61,20 @@ app.get("/user", async(req,res)=>{
   catch(e){
     res.status(500).send({message: "Could not fetch user!"})
   }
+
 });
+
+app.get("/feed", async(req,res)=>{
+  try{
+    const feed = await Feed.find({});
+    res.status(201).send({feed: feed, message: "Fetched Feed"})
+  }
+  catch(e){
+    res.status(500).send({message: "Could not fetch feed!"})
+  }
+ 
+});
+
 
 app.post ("/addUser", async(req, res)=>{
   try{

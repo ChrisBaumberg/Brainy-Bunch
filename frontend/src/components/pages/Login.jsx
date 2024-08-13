@@ -17,7 +17,7 @@ export default function Login(){
             gridTemplateRows: '15% 65% 20%',
             
             fontSize: "32px",
-            backgroundColor: "#04ADBF"
+            backgroundColor: "background.default"
         }}>
             {/*Here is the Headline component*/}
             <Headline weight={"32px"} text="Brainy Bunch"/>
@@ -30,7 +30,7 @@ export default function Login(){
                 height: "100%",
                 display: "grid",
                 gridTemplateColumns: "50% 50%",
-                backgroundColor: "#04BFBF"
+                
             }}>
                     {/* Login fields */}
                 <Box sx={{
@@ -42,7 +42,7 @@ export default function Login(){
                     justifyContent: "center",
                     alignItems: "center",
                     textAlign: "center",
-                    backgroundColor: "#025959"
+                
                     
                     }}>
                         <LoginForm/>
@@ -56,7 +56,7 @@ export default function Login(){
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                    backgroundColor: "#04BFBF",
+                  
                     paddingRight: "20px",
                     paddingLeft: "20px"
                     }}>
@@ -70,7 +70,7 @@ export default function Login(){
                 width: "100%",
                 height: "100%",
            
-                backgroundColor: "#A0A603"
+       
                
             }}>
             </Box>

@@ -10,7 +10,7 @@ export function Register(){
             display : "grid",
             gridTemplateRows: "15% 70% 15%",
             fontSize: "32px",
-            backgroundColor: "#04ADBF"
+            backgroundColor: "background.default"
         }}>
             {/*Here is the Headline component*/}
             <Headline weight={"32px"} text="Brainy Bunch"/>
@@ -19,7 +19,7 @@ export function Register(){
             height: "100%",
             display: "grid",
             gridTemplateColumns: "100%",
-            backgroundColor: "#04BFBF"
+         
         }}>
             {/*RegisterForm */}
             <Box sx={{
@@ -29,7 +29,7 @@ export function Register(){
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: "#025959",
+            
                 textAlign: "center"
             }}>
                 <RegisterForm/>
@@ -42,7 +42,7 @@ export function Register(){
                 width: "100%",
                 height: "100%",
            
-                backgroundColor: "#A0A603"
+            
                
             }}>
             </Box>

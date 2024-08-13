@@ -16,12 +16,14 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Login from "./components/pages/Login";
 import { Register } from "./components/pages/Register";
 import { Fragment } from "react";
+import { ThemeProvider } from "@mui/material";
+import customTheme from "./components/customStyles/customTheme"
 
 function App() {
      const setHeadline = "Brainy Bunch"
   return (
    <Fragment>
-  
+    <ThemeProvider theme={customTheme}>
       <img src="./public/assets/logo.png" alt="" className="logoBrand"/>
       <BrowserRouter>
       <Routes>
@@ -33,6 +35,7 @@ function App() {
         
       </Routes>
       </BrowserRouter>
+      </ThemeProvider>
     </Fragment>
    
   );

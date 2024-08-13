@@ -1,5 +1,7 @@
 import { Link} from "react-router-dom";
 
+
+
 {/* Headline */}
 export default function Headline({size, text}){
     return(
@@ -13,7 +15,8 @@ export default function Headline({size, text}){
             fontFamily: "Georgia",
             fontSize: size
         }}>
-            {text ? text : "NewBond"}
+            {/*{text ? text : "NewBond"}*/}
+            <img src="../../../../assets/BB_logo_transparent_white_300x50.png" alt="" />
         </h1>
         </Link>
         </>
