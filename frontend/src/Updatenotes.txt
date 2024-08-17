@@ -28,3 +28,11 @@ Update vom 06.08.2024:
 Update vom 07.08.2024:
 -   Backend für Registrierung und Login eingefügt
 -   Quote ohne Textarea
+
+Update vom 17.08.2024 (01):
+
+-   Verbindung von Frontend und Backend
+    - services
+    - notifications
+    - Initiale Daten eingefügt   
+-   .env im Frontend

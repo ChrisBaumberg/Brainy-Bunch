@@ -76,11 +76,11 @@ app.get("/feed", async(req,res)=>{
 });
 
 
-app.post ("/addUser", async(req, res)=>{
+app.post ("/addFeed", async(req, res)=>{
   try{
-    const userToAdd = req.body;
-    await User.create(userToAdd);
-    console.log("AddUser")
+    const feedToAdd = req.body;
+    await Feed.create(feedToAdd);
+    console.log("Add Feed")
     res.status(201).send({message:"Added new User"})
   }
   catch(e){
@@ -88,11 +88,11 @@ app.post ("/addUser", async(req, res)=>{
   }
 });
 
-app.delete("/deleteUser/:idParam", async(req,res)=>{
+app.delete("/deleteFeed/:idParam", async(req,res)=>{
   try{
     const {idParam}=req.params;
-    await User.deleteOne({id:idParam});
-    res.status(201).send("User deleted")
+    await Feed.deleteOne({id:idParam});
+    res.status(201).send("Feed deleted")
   }
   catch(e){
     res.status(500).send({message: "Delete didn't work"})
