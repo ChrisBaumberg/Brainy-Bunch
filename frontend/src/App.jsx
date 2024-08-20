@@ -13,11 +13,15 @@ import Box from "@mui/material/Box";
 import { WelcomePage } from "./components/Main/WelcomePage";
 import { ErrorPage } from "./components/Main/ErrorPage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Login from "./components/pages/Login";
+import {Login} from "./components/pages/Login";
 import { Register } from "./components/pages/Register";
 import { Fragment } from "react";
 import { ThemeProvider } from "@mui/material";
 import customTheme from "./components/customStyles/customTheme"
+import {Home} from "./components/pages/Home";
+import  CreateCard from "../src/components/modals/CreateCard"
+import OffercardDetails from "./components/modals/OffercardDetails";
+import { Offercard } from "./components/Offercard";
 
 function App() {
      const setHeadline = "Brainy Bunch"
@@ -30,9 +34,10 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/login" element={
           <Login/>}/>
-        <Route path="/" element={<WelcomePage/>}/>
+          <Route path="/feeds" element={<Home/>}/>
+          <Route path="/" element={<WelcomePage/>}/>
         <Route path = "/:path" element={<ErrorPage/>}/>
-        
+       
       </Routes>
       </BrowserRouter>
       </ThemeProvider>

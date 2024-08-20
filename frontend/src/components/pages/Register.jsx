@@ -1,53 +1,97 @@
-import { Box } from "@mui/material"
-import Headline from "../parts/header/Headline"
-import RegisterForm from "../Forms/RegisterForm"
+import Grid from "@mui/material/Unstable_Grid2";
+import { Box, Button } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+import EnterPassword from "../EnterPassword";
 
-export function Register(){
-    return(
-        <Box sx = {{
-            width: "100vw",
-            height: "100vh",
-            display : "grid",
-            gridTemplateRows: "15% 70% 15%",
-            fontSize: "32px",
-            backgroundColor: "background.default"
-        }}>
-            {/*Here is the Headline component*/}
-            <Headline weight={"32px"} text="Brainy Bunch"/>
-        <Box sx= {{
-            width: "100%",
-            height: "100%",
-            display: "grid",
-            gridTemplateColumns: "100%",
-         
-        }}>
-            {/*RegisterForm */}
-            <Box sx={{
-                width: "100%",
-                height: "100%",
+export function Register() {
+  return (
+    <Box
+      sx={{
+        backgroundColor: "background.default",
+      }}
+    >
+      <Box sx={{ flexGrow: 1, height: "100vh", width: "100vw" }}>
+        <Grid container spacing={2}>
+          {/*  Header */}
+          <Grid xs={12} md={12}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "5px",
+              }}
+            >
+              <img
+                style={{
+                  maxWidth: "400px",
+                  height: "auto",
+                  borderRadius: "8px",
+                  margin: "5px",
+                }}
+                src="src/assets/BB_logo_transparent_black_300x50.png"
+              ></img>
+            </Box>
+          </Grid>
+          {/*   Login Area */}
+          <Grid xs={3} md={3}></Grid>
+          <Grid xs>
+            <Typography
+              sx={{
+                textAlign: "center",
+              }}
+              variant="h5"
+              gutterBottom
+            >
+              Register new account:
+            </Typography>
+            <Box
+              component="form"
+              noValidate
+              autoComplete="off"
+              sx={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                flexWrap: "wrap",
                 justifyContent: "center",
-            
-                textAlign: "center"
-            }}>
-                <RegisterForm/>
+                alignItems: "center",
+                gap: "10px",
+              }}
+            >
+              <TextField
+                sx={{ width: "230px" }}
+                id="name"
+                label="Username"
+                placeholder="Chose username"
+                variant="outlined"
+                required
+              ></TextField>
+              <EnterPassword></EnterPassword>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "10px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Button type="reset" variant="contained">
+                  Cancel
+                </Button>
+                <Button type="submit" variant="contained">
+                  Enter
+                </Button>
+              </Box>
             </Box>
-          
-        </Box>
-
-        {/* Bottom Box  - to be used as footer? */}
-        <Box sx={{
-                width: "100%",
-                height: "100%",
-           
-            
-               
-            }}>
-            </Box>
-        </Box>
-    )
-
+          </Grid>
+          <Grid xs={3}></Grid>
+          {/*     Footer */}
+          <Grid xs={12} md={12}></Grid>
+        </Grid>
+      </Box>
+    </Box>
+  );
 }
-

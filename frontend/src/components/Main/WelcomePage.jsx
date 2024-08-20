@@ -15,7 +15,7 @@ export function WelcomePage(){
             First Page */}
     <h1 style={{textAlign: "center"
     }}>Welcome at <Headline weight={"32px"} text="Brainy Bunch"/> </h1> <br />
-    <Link to ="/login" style={{textDecoration: "none", display: "flex", justifyContent:"center"}}>
+    <Link to ="/feeds" style={{textDecoration: "none", display: "flex", justifyContent:"center"}}>
         <img src="../../../assets/BB_logo_gross.png" alt="" />
     </Link>
     {/*     Link to Login-Page */}

@@ -29,7 +29,7 @@ app.use(async(req, res, next)=>{
     console.log("Running error")
   }
 });
-const UserSchema = new mongoose.Schema({
+/*const UserSchema = new mongoose.Schema({
   username: {type: String, required: true, unique: true},
   password: {type: String, required: true},
   email: {type: String, required: true}
@@ -37,7 +37,7 @@ const UserSchema = new mongoose.Schema({
 
 
 const User = mongoose.model("socialusers",UserSchema);
-
+*/
 const FeedSchema = new mongoose.Schema({
   id: String,
   title: String,
@@ -52,6 +52,7 @@ const FeedSchema = new mongoose.Schema({
 });
 
 const Feed = mongoose.model("feed", FeedSchema);
+/*
 app.get("/user", async(req,res)=>{
   try{
     const user= await User.find({});
@@ -63,7 +64,7 @@ app.get("/user", async(req,res)=>{
   }
 
 });
-
+*/
 app.get("/feed", async(req,res)=>{
   try{
     const feed = await Feed.find({});
