@@ -8,7 +8,6 @@ Todos:
 
 Probleme:
 -   Ränder
--   Größe der Textarea auf Login-Page ist statisch, sollte dynamisch sein
 
 To discuss:
 -   Farbverteilung

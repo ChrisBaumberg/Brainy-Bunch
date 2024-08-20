@@ -26,16 +26,16 @@ export default function RegisterForm(){
             <input type="text" placeholder="username" value={username} onChange={(e)=>setUsername(e.target.value)}/> <br />
            {/* <label>E-Mail-Adresse:</label> <br />
             <input type="e-mail" placeholder="name@email.com"/> <br />*/}
-            <label>Passwort:</label> <br />
+            <label>Password:</label> <br />
             <input type="password" placeholder="password" value={password} onChange={(e)=>setPassword(e.target.value)}/> <br />
            {/* <label>Passwort wiederholen:</label> <br />
             <input type="password" /> <br />        */}
-            <input type="submit" value="Registrieren" style={{width:"90px"}} className="buttonSubmitRegister"/> <br /> <br />{/*
+            <input type="submit" value="Register" style={{width:"90px"}} className="buttonSubmitRegister"/> <br /> <br />{/*
              Rights-Links (AGB, Datenschutz) + Checkbox(en) alias "Ich akzeptiere"*/} 
           </form>
-            <label style={{fontSize: "12px"}}>Du hast bereits einen Account?             
+            <label style={{fontSize: "12px"}}>You've got an account?             
                 <Link to="/login">
-                    Melde dich hier an.
+                    Login here
                 </Link>
                 {/* Link to Login-Page */}
             </label>
