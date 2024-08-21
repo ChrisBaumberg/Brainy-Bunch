@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { FeedContext } from "../context/FeedContextHandler";
 
-const useFeed = ()=>{
+const useFeeds = ()=>{
     const context = useContext(FeedContext);
 
     if(!context){
@@ -10,4 +10,4 @@ const useFeed = ()=>{
     return context;
 };
 
-export default useFeed;
+export default useFeeds;

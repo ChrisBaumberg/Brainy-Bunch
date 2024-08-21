@@ -31,7 +31,7 @@ export function Register() {
                   borderRadius: "8px",
                   margin: "5px",
                 }}
-                src="src/assets/BB_logo_transparent_black_300x50.png"
+                src="src/assets/BB_logo_gross.png"
               ></img>
             </Box>
           </Grid>
@@ -78,6 +78,7 @@ export function Register() {
                   alignItems: "center",
                 }}
               >
+               
                 <Button type="reset" variant="contained">
                   Cancel
                 </Button>

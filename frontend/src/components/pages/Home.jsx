@@ -10,7 +10,6 @@ import AddIcon from "@mui/icons-material/Add";
 import Person2Icon from "@mui/icons-material/Person2";
 import HomeIcon from "@mui/icons-material/Home";
 import { v4 as uuidv4 } from "uuid";
-import logo from "../../../assets/BB_logo_transparent_black_300x50.png";
 import { Link } from "react-router-dom";
 
 export function Home() {
@@ -81,7 +80,7 @@ export function Home() {
                   borderRadius: "8px",
                   margin: "5px",
                 }}
-                src={logo}></img>
+                src="src/assets/BB_logo_transparent_black_300x50.png"></img>
             </Box>
             <hr></hr>
           </Grid>
@@ -117,6 +116,7 @@ export function Home() {
 
           {/*     Footer */}
           <Grid xs={12} md={12}>
+            <Link to = "/addFeed">
             <Fab
               sx={{
                 position: "fixed",
@@ -126,10 +126,9 @@ export function Home() {
               }}
               color="primary"
               aria-label="add">
-          
               <AddIcon />
-        
             </Fab>
+            </Link>
             <Box sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}>
               <BottomNavigation
                 showLabels

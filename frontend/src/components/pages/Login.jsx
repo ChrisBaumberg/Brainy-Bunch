@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import { Box, Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import { Link } from "react-router-dom";
 
 export function Login() {
   return (
@@ -8,7 +9,7 @@ export function Login() {
       sx={{
         backgroundColor: "background.default",
       }}>
-      <Box sx={{ flexGrow: 1, height: "100vh", width: "100vw" }}>
+      <Box sx={{ flexGrow: 1, height: "200vh", width: "100vw" }}>
         <Grid container spacing={2}>
           {/*  Header */}
           <Grid xs={12} md={12}>
@@ -27,7 +28,7 @@ export function Login() {
                   borderRadius: "8px",
                   margin: "5px",
                 }}
-                src="src/assets/BB_logo_transparent_black_300x50.png"></img>
+                src="src/assets/BB_logo_gross.png"></img>
             </Box>
           </Grid>
           {/*   Login Area */}
@@ -56,7 +57,9 @@ export function Login() {
                 type="password"
                 required></TextField>
               <Button variant="contained">Enter</Button>
+              <Link to = "/">
               <Button variant="contained">Cancel</Button>
+              </Link>
             </Box>
           </Grid>
           <Grid xs={3}></Grid>

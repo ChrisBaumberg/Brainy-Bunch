@@ -1,0 +1,16 @@
+Dieser Fehler tritt auf, wenn man auf den Plus-Button auf der Home-Page klickt. (Dieser Button ist ein Link zur CreateCard.):
+
+"Warning: Failed prop type: The prop `open` is marked as required in `ForwardRef(Modal2)`, but its value is `undefined`.
+Modal2@http://localhost:5173/node_modules/.vite/deps/chunk-QWOXPUWY.js?v=e50ac18c:2992:32
+CreateCard@http://localhost:5173/src/components/modals/CreateCard.jsx?t=1724240438922:22:35
+RenderedRoute@http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=e50ac18c:4037:7
+Routes@http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=e50ac18c:4475:7
+Router@http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=e50ac18c:4423:7
+BrowserRouter@http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=e50ac18c:5165:7
+DefaultPropsProvider@http://localhost:5173/node_modules/.vite/deps/chunk-QJUY77H4.js?v=e50ac18c:8067:30
+RtlProvider@http://localhost:5173/node_modules/.vite/deps/chunk-LS62N2DJ.js?v=e50ac18c:1002:7
+ThemeProvider@http://localhost:5173/node_modules/.vite/deps/chunk-LS62N2DJ.js?v=e50ac18c:953:7
+ThemeProvider2@http://localhost:5173/node_modules/.vite/deps/chunk-LS62N2DJ.js?v=e50ac18c:1044:7
+ThemeProvider@http://localhost:5173/node_modules/.vite/deps/chunk-H34BAU2P.js?v=e50ac18c:294:7
+App"
+

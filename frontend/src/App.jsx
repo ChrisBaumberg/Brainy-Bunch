@@ -18,11 +18,13 @@ import { Register } from "./components/pages/Register";
 import { Fragment } from "react";
 import { ThemeProvider } from "@mui/material";
 import customTheme from "./components/customStyles/customTheme"
-import {Home} from "./components/pages/Home";
+import {Home} from "./components/pages/Home";/*
 import  CreateCard from "../src/components/modals/CreateCard"
 import OffercardDetails from "./components/modals/OffercardDetails";
 import { Offercard } from "./components/Offercard";
-
+*/
+import { Offercard } from "./components/Offercard";
+import CreateCard from "./components/modals/CreateCard";
 function App() {
      const setHeadline = "Brainy Bunch"
   return (
@@ -37,7 +39,7 @@ function App() {
           <Route path="/feeds" element={<Home/>}/>
           <Route path="/" element={<WelcomePage/>}/>
         <Route path = "/:path" element={<ErrorPage/>}/>
-       
+        <Route path = "/addFeed" element ={<CreateCard/>}/>
       </Routes>
       </BrowserRouter>
       </ThemeProvider>
