@@ -28,7 +28,7 @@ const feedService={
                 headers: {
                     "Content-Type":"application/json",
                 },
-                data: JSON.stringify(newTodo),
+                data: JSON.stringify(newFeed),
             };
                 
                 const res = await axios(config);
@@ -47,7 +47,7 @@ const feedService={
         try{
             const config = {
                 method: "delete",
-                url: `${process.env.REACT_APP_BASE_URI}/${process.env.REACT_APP_DELETE_ROUTE}/${todoId}`,
+                url: `${process.env.REACT_APP_BASE_URI}/${process.env.REACT_APP_DELETE_ROUTE}/${feedId}`,
             
             headers: {
                 "Content-Type":"application/json"

@@ -3,18 +3,18 @@ import { createTheme } from "@mui/material";
 const customTheme = createTheme({
     palette: {
         primary: {
-            main: "#04ADBF"
+            main: "#04BFBF"
         },
         background: {
-            default: "#A0A603",
+            default: "#F2E0C9",
             paper: "#FFFFFF"
         },
         text: {
-            primary: "#04BFBF",
-            secondary: "#025959"
+            primary: "#A0A603",
+            secondary: "#04ADBF"
         },
         success: {
-            main: "#F2E0C9"
+            main: "#025959"
         }
     }
 })

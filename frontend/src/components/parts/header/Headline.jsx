@@ -1,24 +1,34 @@
+import { Fragment } from "react";
 import { Link} from "react-router-dom";
+import { Box, Grid } from "@mui/material";
 
 
 
 {/* Headline */}
 export default function Headline({size, text}){
     return(
-        <>
-        <Link to ="/" style={{
-            textDecoration: "none"
+       
+        <Box style={{
+            color: "text.primary",
+            backgroundColor: "background.default"
         }}>
+      
         <h1 style={{
             textAlign : "center",
-            color: "#F2E0C9",
+           
             fontFamily: "Georgia",
             fontSize: size
         }}>
             {/*{text ? text : "NewBond"}*/}
-            <img src="../../../../assets/BB_logo_transparent_white_300x50.png" alt="" />
+            <img src="../../../../assets/BB_logo_gross.png" style={{
+                maxWidth: "50%",
+                height: "auto",
+                borderRadius: "8px",
+                margin: "5px" 
+            }} />
         </h1>
-        </Link>
-        </>
+      
+        </Box>
+  
     )
 }

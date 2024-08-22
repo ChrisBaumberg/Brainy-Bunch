@@ -1,10 +1,11 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import { Box, Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import Link from "@mui/material/Link";
+import EnterPassword from "../components/EnterPassword";
 import Typography from "@mui/material/Typography";
-import EnterPassword from "../EnterPassword";
 
-export function Register() {
+export function Login() {
   return (
     <Box
       sx={{
@@ -31,7 +32,7 @@ export function Register() {
                   borderRadius: "8px",
                   margin: "5px",
                 }}
-                src="src/assets/BB_logo_transparent_black_300x50.png"
+                src="/logo.png"
               ></img>
             </Box>
           </Grid>
@@ -45,7 +46,7 @@ export function Register() {
               variant="h5"
               gutterBottom
             >
-              Register new account:
+              Login:
             </Typography>
             <Box
               component="form"
@@ -61,10 +62,12 @@ export function Register() {
               }}
             >
               <TextField
-                sx={{ width: "230px" }}
+                sx={{
+                  width: "230px",
+                }}
                 id="name"
                 label="Username"
-                placeholder="Chose username"
+                placeholder="Enter username"
                 variant="outlined"
                 required
               ></TextField>
@@ -84,6 +87,11 @@ export function Register() {
                 <Button type="submit" variant="contained">
                   Enter
                 </Button>
+              </Box>
+              <Box>
+                <Link variant="body2" href="#">
+                  Forget your password? Click here
+                </Link>
               </Box>
             </Box>
           </Grid>
