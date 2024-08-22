@@ -16,6 +16,7 @@ import Badge from "@mui/material/Badge";
 
 import { useState } from "react";
 import OffercardDetails from "./modals/OffercardDetails";
+import CreateCard from "./modals/CreateCard";
 
 export function Offercard({
   title,
@@ -27,10 +28,30 @@ export function Offercard({
   price,
   contact,
   badgeContent,
+  posts,
+  setPosts,
+  id,
 }) {
-  const [likes, setLikes] = useState(0);
+  //used to show OffercardDtails of Offercard
   const [open, setOpen] = useState(false);
   const onModal = () => setOpen(!open);
+
+  //addLike function
+  const handleLike = () => {
+    setPosts(
+      posts.map((post) => {
+        if (post.id === id) {
+          if (post.badgeContent === 0) {
+            post.badgeContent++;
+          } else {
+            post.badgeContent--;
+          }
+        }
+        return post;
+      })
+    );
+  };
+
   return (
     <Paper elevation={1}>
       <Card
@@ -71,7 +92,7 @@ export function Offercard({
           <IconButton
             color="primary"
             aria-label="give like"
-            onClick={() => setLikes(likes + 1)}>
+            onClick={handleLike}>
             <ThumbUpIcon />
           </IconButton>
           <Button color="primary" size="small" onClick={onModal}>

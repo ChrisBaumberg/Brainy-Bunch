@@ -2,49 +2,43 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import "./App.css";
+
+//custom components imports
+import { theme } from "./components/theme/theme";
 
 //MUI imports
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
+import { Box, CssBaseline } from "@mui/material";
+import { ThemeProvider } from "@emotion/react";
 
 //REACT imports
+import { Fragment } from "react";
 
+//Components
 import { WelcomePage } from "./components/Main/WelcomePage";
 import { ErrorPage } from "./components/Main/ErrorPage";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import {Login} from "./components/pages/Login";
-import { Register } from "./components/pages/Register";
-import { Fragment } from "react";
-import { ThemeProvider } from "@mui/material";
-import customTheme from "./components/customStyles/customTheme"
-import {Home} from "./components/pages/Home";/*
-import  CreateCard from "../src/components/modals/CreateCard"
-import OffercardDetails from "./components/modals/OffercardDetails";
-import { Offercard } from "./components/Offercard";
-*/
-import { Offercard } from "./components/Offercard";
+
+
+
+import customTheme from "./components/customStyles/customTheme";
+import { Home } from "./pages/Home";
 import CreateCard from "./components/modals/CreateCard";
+
 function App() {
-     const setHeadline = "Brainy Bunch"
   return (
-   <Fragment>
-    <ThemeProvider theme={customTheme}>
-      <img src="./public/assets/logo.png" alt="" className="logoBrand"/>
+    <Fragment>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
       <BrowserRouter>
       <Routes>
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/login" element={
-          <Login/>}/>
           <Route path="/feeds" element={<Home/>}/>
           <Route path="/" element={<WelcomePage/>}/>
         <Route path = "/:path" element={<ErrorPage/>}/>
-        <Route path = "/addFeed" element ={<CreateCard/>}/>
+       <Route path ="/addFeed" element ={<CreateCard/>}/>
       </Routes>
       </BrowserRouter>
       </ThemeProvider>
     </Fragment>
-   
   );
 }
 export default App;
